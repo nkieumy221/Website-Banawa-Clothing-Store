@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Roboto', 'Arial',sans-serif;
+  /*font-family: 'Helvetica','Arial',sans-serif;
+  */background-image: linear-gradient(to right, #1f1f14,   #5c5c3d);
+}
+.form1{
+  height: 480px;
+  background: white !important;
+  width: 500px;
+  margin-top: 90px;
+  margin-left: 30%;
+  padding-top: 15px;
+  border-radius: 10px;
+} 
+.title-form1{
+  font-size: 30px;
+  color: #2d5086  !important;
+}
+.icon-login{
+  margin-top: 15px;
+}
+.fa-facebook{
+  background: #3b5998 !important;
+  width: 55px;
+  height: 52px;
+  border-radius: 40px;
+  padding: 10px 10px;
+  font-size: 28px;
+  color: white;
+}
+.fa-twitter{
+  background: #00aced !important;
+  width: 55px;
+  height: 52px;
+  margin-left: 30px;
+  border-radius: 40px;
+  padding: 12px 10px;
+  font-size: 28px;
+  color: white;
+}
+.fa-google-plus-g{
+  background: #dd4b39 !important;
+  width: 55px;
+  height: 52px;
+  margin-left: 30px;
+  border-radius: 40px;
+  padding: 10px 10px;
+  font-size: 28px;
+  color: white;
+}
+.title-form2{
+  margin-top: 15px;
+  font-size: 22px;
+  color:#1e4462 ;
+}
+.input-form{
+  width: 95%;
+  margin-left: 10px;
+}
+.btn-primary{
+  margin-left: 50px;
+  width: 80%;
+  background: #2d5086 !important;
+  border: none !important;
+}
+.btn-primary a{
+
+  color: white;
+}
+.btn-primary a:hover{
+  text-decoration: none;
+  color: white;
+}
+.btn-primary:focus{
+  box-shadow: none !important;
+}
+.form-control:focus{
+  border: 1px solid #e2eae6 !important;
+  box-shadow: none !important;
+}
+.forget1{
+  margin-top: 15px;
+}
+.forget1 a:hover{
+  text-decoration: none;
+}
+.forget2{
+  margin-top: 15px;
+}
+.forget-title2{
+  float: right;
+  margin-right: 20px;
+}

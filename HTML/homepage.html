@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banawa Shop</title>
+	<meta charset="utf-8">
+	<!--bootstrap-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  	<!--icon-->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<!--link css-->
+  	<link rel="stylesheet" type="text/css" href="../CSS/homepage.css">
+  	<!--link owl carousel-->
+  	<link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="../owlcarousel/owl.carousel.min.js"></script>
+
+</head>
+<body>
+	<!--head-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height: 20px;">
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+		    	<li class="nav-item">
+		        	<a class="nav-link" href="#"><i class="fa fa-facebook"></i></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+		      	</li> 
+		      	 <li class="nav-item">
+		      	 	<span class="nav-link text-white mt-1">Hotline : 0905443375</span>
+		      	</li>   
+    		</ul>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-sm navBrand" style="width: 100%">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#"><img src="http://banawa.com.vn/thumb/198x39/1/upload/hinhanh/logo-4907.png"></a>
+
+		<!-- Links -->
+		<ul class="navbar-nav ml-auto mr-5">
+			<li class="nav-item" data-toggle="modal" data-target="#staticBackdrop">
+				<a href="#" ><i class="fa fa-search br"></i></a>
+				<!-- Modal -->
+				<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content" style="height: 200px;">
+				      <div class="modal-header">
+				      	<h5 class="modal-title" id="staticBackdropLabel">Search</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<form class="form-inline pt-3" style="padding-left: 50px">
+							<input type="text" class="form-control" id="email" placeholder="Search..." name="search" size="70px">
+							<i class="fa fa-search" style="color: black; font-size: 20px;padding: 10px;"></i>
+				      	</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</li>
+			<li class="nav-item" data-toggle="modal" data-target="#static">
+			  	<a href="#"><i class="fa fa-user br"></i></a>
+			  	<!-- Modal -->
+				<div class="modal fade" id="static" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+
+				      	<div class="container">
+						  <form action="/action_page.php">
+						    <div class="row">
+						      <div class="vl">
+						        <span class="vl-innertext">or</span>
+						      </div>
+
+						      <div class="col">
+						        <a href="#" class="fb bt">
+						          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+						         </a>
+						        <a href="#" class="twitter bt">
+						          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+						        </a>
+						        <a href="#" class="google bt"><i class="fa fa-google fa-fw">
+						          </i> Login with Google+
+						        </a>
+						      </div>
+
+						      <div class="col">
+						        <div class="hide-md-lg">
+						          <p>Or sign in manually:</p>
+						        </div>
+
+						        <input type="text" name="username" placeholder="Username" required class="in">
+						        <input type="password" name="password" placeholder="Password" required class="in">
+						        <input type="submit" value="Login" class="p-2">
+						        <button class="btn btn-light">Quên mật khẩu</button>
+						      </div>
+						      
+						    </div>
+						  </form>
+						</div>
+						<div class="bottom-container">
+						  <div class="row">
+						    <div class="col">
+						      <a href="#" style="color:white" class="btn">Đăng kí</a>
+						    </div>
+						    <div class="col">
+						      <a href="DangNhap.html" style="color:white" class="btn">Admin</a>
+						    </div>
+						  </div>
+						</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</li>
+			<li class="nav-item" data-toggle="modal" data-target="#cart">
+			  	<a href="#"><i class="fa fa-shopping-bag br"></i></a>
+			  	<!-- Modal -->
+				<div class="modal fade" id="cart" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog" >
+				    <div class="modal-content" style="height: 300px">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Cart</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      <span>Total price: $</span>
+				      </div>
+				      <div class="modal-footer">
+				      	<button type="button" class="btn btn-primary">Đặt ngay</button>
+				      	<button type="button" class="btn btn-danger" data-dismiss="modal">Xóa</button>
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+				        
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<div id="myNav" class="overlay">
+		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		 <div class="overlay-content">
+		    <div class="Form-login">
+				  <form action="/action_page.php">
+				    <div class="rowlum">
+				      <div class="vl">
+				        <span class="vl-innertext">or</span>
+				      </div>
+
+				      <div class="colum">
+				        <a href="#" class="fb btn">
+				          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+				         </a>
+				        <a href="#" class="twitter btn">
+				          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+				        </a>
+				        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+				          </i> Login with Google+
+				        </a>
+				      </div>
+
+				      <div class="colum">
+				        <div class="hide-md-lg">
+				          <p>Or sign in manually:</p>
+				        </div>
+
+				        <input type="text" name="username" placeholder="Username" required>
+				        <input type="password" name="password" placeholder="Password" required>
+				        <input type="submit" value="Login" class="submit">
+				      </div>
+				      
+				    </div>
+				  </form>
+			</div>
+
+			<div class="bottom-container">
+			  <div class="row">
+			    <div class="col">
+			      <a href="#" style="color:white" class="btn">Sign up</a>
+			    </div>
+			    <div class="col">
+			      <a href="#" style="color:white" class="btn">Forgot password?</a>
+			    </div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+
+     
+	<nav class="navbar navbar-expand-sm navbar-light sticky-top thanhtieude">		
+		<!-- Toggler/collapsibe Button -->
+  		<button class="navbar-toggler btn-light bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    	<span class="navbar-toggler-icon bg-light"></span>
+  		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="nav navbar-nav mx-auto">
+		    	<li class="nav-item ">
+		        	<a class="nav-link text-white active" href="../HTML/homepage.html">TRANG CHỦ</a>
+		      	</li>
+		      	<li class="nav-item dropdown">
+		        	<span class="nav-link"><a href="../HTML/quanao.html" style="text-decoration: none;color: white;">QUẦN ÁO</a></span>
+				  	<ul class="dropdown-menu">
+					    <li><a href="../HTML/quanao.html">Hoodie-Sweater</a></li>
+					    <li><a href="#">Tee-Shirt</a></li>
+				        <li><a href="#">Pan</a></li>
+					    <li><a href="#">Jacket</a></li>
+					    <li><a href="#">Váy</a></li>
+					    <li><a href="#">Short</a></li>
+				  	</ul>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link text-white " href="../HTML/phukien.html">PHỤ KIỆN</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link text-white " href="../HTML/saleoff.html">KHUYẾN MÃI</a>
+		      	</li> 
+		      	<li class="nav-item">
+		        	<a class="nav-link text-white " href="../HTML/contact.html">LIÊN HỆ</a>
+		      	</li>   
+    		</ul>
+		</div>
+	</nav>
+	<!--container-->
+	<div class="container-fluid">
+		<!--bia-->
+		<div id="demo" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		    <li data-target="#demo" data-slide-to="3"></li>
+		  </ul>
+		  
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<img src="../Hinh anh/bia1.png" alt="Los Angeles" >
+		    
+		    </div>
+		    <div class="carousel-item">
+		    	<img src="../Hinh anh/bia2.png" alt="Chicago" >
+		    </div>
+		    <div class="carousel-item">
+		    	<img src="../Hinh anh/bia3.png" alt="New York">
+		    </div>
+		    <div class="carousel-item">
+		    	<img src="../Hinh anh/bia4.png" alt="New York">
+		    </div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  
+		</div>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="owl-carousel owl-theme mt-2">
+		<div class="item image-hover">
+    		<img src="https://rinilo.com/wp-content/uploads/2020/03/banner_1.png">
+    		<div class="item-content">
+    			<div class="pb-3">Phong cách Unisex</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+		</div>
+    	
+    	<div class="item image-hover">
+    		<img src="https://cachbanhangonline.com.vn/wp-content/uploads/2019/11/lay-si-quan-ao-unisex-intro.jpg">
+    		<div class="item-content">
+    			<div class="pb-3">Thời trang teen</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+    	</div>
+    	
+    	<div class="item image-hover">
+    		<img src="https://bumshop.com.vn/wp-content/uploads/2019/04/yg-2.jpg">
+    		<div class="item-content">
+    			<div class="pb-3">Phụ kiện</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+    	</div>
+    	<div class="item image-hover">
+    		<img src="https://aothuntrongiasi.vn/wp-content/uploads/2020/03/Unisex-gi%C3%A1-r%E1%BA%BB-825x510.jpg">
+    		<div class="item-content">
+    			<div class="pb-3">Sản phẩm mới</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+    	</div>
+    	<div class="item image-hover">
+    		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd7HkMKgTchTFZrYSck2n6qjg3sTSjnLU8SA&usqp=CAU">
+    		<div class="item-content">
+    			<div class="pb-3">Đồ đôi</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+    	</div>
+    	<div class="item image-hover">
+    		<img src="https://cachbanhangonline.com.vn/wp-content/uploads/2019/11/lay-si-quan-ao-unisex-avata.jpg">
+    		<div class="item-content">
+    			<div class="pb-3">Sản phẩm khuyến mãi</div>
+    			<button class="btn btn-light">Xem ngay</button>
+    		</div>
+    	</div>
+	</div>
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+		    stagePadding: 50,
+		    loop:true,
+		    margin:10,
+		    nav:true,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:2
+		        },
+		        1000:{
+		            items:3
+		        }
+		    }
+		})
+	</script>
+	<div class="container mt-5 clearfix">
+		<div class="row text-center">
+			<div class="col-12">
+				<h2>Sản phẩm nổi bật</h2>
+			</div>
+			<div class="row noibat mt-4">
+				<div class="col-xl-2 ">
+					<a href="../HTML/sanpham.html"><img src="../Hinh anh/nb1.jpg" class="img-fluid"></a>
+					<a href=""><img src="../Hinh anh/nb2.jpg" class="img-fluid mt-1"></a>
+				</div>
+				<div class="col-xl-4 ry">
+					<a href="../HTML/sanpham.html"><img src="../Hinh anh/nb3.jpg" class="img-fluid"></a>
+				</div>
+				<div class="col-xl-4 ry">
+					<a href="../HTML/sanpham.html"><img src="../Hinh anh/nb4.jpg" class="img-fluid"></a>
+				</div>
+				<div class="col-xl-2">
+					<a href="../HTML/sanpham.html"><img src="../Hinh anh/nb5.jpg" class="img-fluid"></a>
+					<a href="../HTML/sanpham.html"><img src="../Hinh anh/nb6.jpg" class="img-fluid mt-1"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--san pham moi-->
+	<div class="container mt-5">
+		<div class="row text-center">
+			<div class="col-12">
+				<h2>Sản phẩm mới</h2>
+			</div>
+		</div>
+		<div class="row sanphammoi mt-4">
+			<div class="col-sm-3">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+						 	<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/8465271126832326085869532416949373724322979o-2521.jpg">
+						 	<div class="sale-num">
+								<b>-34%</b>
+							</div>
+						</div>
+						<p class="card-title">ChiLi Wave</p>
+						<p class="card-text">320.000đ   <strike style="color: #808080;">420.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3" >
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/10172398226618358573932956609249211655068929o-5323.jpg">
+							<div class="sale-num">
+								<b>-34%</b>
+							</div>
+						</div>
+						
+						<p class="card-title">Hoodie Friends (Black)</p>
+						<p class="card-text">300.000đ   <strike style="color: #808080;">420.000đ</strike></p>
+					</div>
+				</a>
+			</div>	
+			<div class="col-sm-3 ">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/9929232826494881019614042951375790643609600o-6307.jpg">
+							<div class="sale-num">
+								<b>-34%</b>
+							</div>
+						</div>
+						<p class="card-title">MR Mouse Sweater (Pink Dark)</p>
+						<p class="card-text">300.000đ   <strike style="color: #808080;">420.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/1-4-7064.jpg">
+							<div class="sale-num">
+								<b>-32%</b>
+							</div>
+						</div>
+						<p class="card-title">Logo Jacket Random (White)</p>
+						<p class="card-text">320.000đ   <strike style="color: #808080;">420.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class=" mt-5">
+		<div class="row saleoff">
+			<div class="col-md-4 image-hover">
+				<img src="../Hinh anh/ap5.jpg" class="sale-img">
+				<div class="sale-content">
+					<p>Khuyến mãi tới 50%</p>
+					<h4>Phụ kiện thời trang</h4>
+					<button class="btn btn-dark">Mua ngay</button>
+				</div>
+			</div>
+			<div class="col-md-4 image-hover">
+				<img src="../Hinh anh/ap4.jpg" class="sale-img">
+				<div class="sale-content">
+					<p>Phong cách</p>
+					<h4>Top Trend Teen</h4>
+					<button class="btn btn-dark">Xem thêm</button>
+				</div>
+			</div>
+			<div class="col-md-4 image-hover">
+				<img src="../Hinh anh/ap1.jpg" class="sale-img">
+				<div class="sale-content">
+					<p>Bộ sưu tập</p>
+					<h4>Sản phẩm mới tháng 8</h4>
+					<button class="btn btn-dark">Xem thêm</button>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="container mt-5">
+		<div class="row text-center">
+			<div class="col-12">
+				<h2>Sản phẩm bán chạy</h2>
+			</div>
+		</div>
+		<div class="row sanphammoi mt-4">
+			<div class="col-sm-3">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/8351311725445169357918559069768119265787904o-9620.jpg">
+							<div class="sale-num">
+								<b>-30%</b>
+							</div>
+						</div>
+						<p class="card-title">Over long wallet- black</p>			
+						<p class="card-text">200.000đ   <strike style="color: #808080;">320.000đ</strike></p>
+					</div>
+				</a>
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/a22c789befda14844dcb-6819.jpg">
+							<div class="sale-num">
+								<b>-30%</b>
+							</div>
+						</div>
+						<p class="card-title">Over long wallet- black</p>			
+						<p class="card-text">250.000đ   <strike style="color: #808080;">450.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3" >
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/994279152649488175294730838829588472659968o-2212.jpg">
+							<div class="sale-num">
+								<b>-54%</b>
+							</div>
+						</div>
+						<p class="card-title">Champion School Angle Backpack</p>				
+						<p class="card-text">250.000đ   <strike style="color: #808080;">520.000đ</strike></p>
+					</div>
+				</a>
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/0c7cbac52d84d6da8f95-3449.jpg">
+							<div class="sale-num">
+								<b>-54%</b>
+							</div>
+						</div>
+						<p class="card-title">Champion School Angle Backpack</p>				
+						<p class="card-text">250.000đ <strike style="color: #808080;">520.000đ</strike></p>
+					</div>
+				</a>
+			</div>	
+			<div class="col-sm-3 ">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/img4752-9679.jpg">	
+							<div class="sale-num">
+								<b>-24%</b>
+							</div>
+						</div>
+						<p class="card-title">Glow socks</p>	
+						<p class="card-text">100.000đ   <strike style="color: #808080;">220.000đ</strike></p>
+					</div>
+				</a>
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/8076299925207583948343762550853361393991680o-7751.jpg">	
+							<div class="sale-num">
+								<b>-10%</b>
+							</div>
+						</div>
+						<p class="card-title">Glow socks</p>	
+						<p class="card-text">100.000đ   <strike style="color: #808080;">120.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/4745697244e04ef88b057eb0d70dac11-7574.JPG">	
+							<div class="sale-num">
+								<b>-10%</b>
+							</div>	
+						</div>
+						<p class="card-title">Bucket hat - Beige</p>			
+						<p class="card-text">100.000đ  <strike style="color: #808080;">120.000đ</strike></p>
+					</div>
+				</a>
+				<a href="../HTML/sanpham.html">
+					<div class="card">
+						<div class="image-hover">
+							<img class="img-fluid" src="http://banawa.com.vn/thumb/795x900/1/upload/product/8412285525612049674563858744548140436160512o-7074.jpg">
+							<div class="sale-num">
+								<b>-34%</b>
+							</div>	
+						</div>	
+						<p class="card-title">Bucket manokit - Beige</p>			
+						<p class="card-text">210.000đ <strike style="color: #808080;">320.000đ</strike></p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<footer class="container-fluid bg-dark mt-5" >
+	<div class="container-fluid bg-dark">
+		<div class="row text-white " style="font-size: 14px;">
+			<div class="col-sm-4 mt-4">
+				<h6>THÔNG TIN MUA HÀNG</h6>
+				<p class="mt-2"><i><b>BANAWA SHOP</b></i> - với những sản phẩm về Streetwear Tất cả các sản phẩm đều cam kết chọn lọc từ những chất liệu vải và mực in tốt nhất! Cùng với những kiểu thiết kế thật bắt mắt! </p>
+			</div>
+			<div class="col-sm-4 mt-4" >
+				<h6>THÔNG TIN LIÊN HỆ</h6>
+				<p class="mt-2"><i class="fa fa-map-marker"></i>  Địa chỉ 1: 61/23 Cô Giang, P. Cầu Ông Lãnh, Quận 1, TP HCM</p>
+				<p><i class="fa fa-map-marker"></i>  Địa chỉ 2: 413/12 Lê Văn Sỹ, Phường 12, Quận 3, TP HCM</p>
+				<p><i class="fa fa-phone"></i>  Điện thoại:  0903 026 227</p>
+				<p><i class="fa fa-paper-plane"></i>  Email: banawa.official@gmail.com</p>
+			</div>
+			<div class="col-sm-4 mt-4">
+				<h6>FANPAGE FACEBOOK</h6>
+				<iframe src="http://chiliclub.vn/" class="mt-2"></iframe>
+			</div>
+		</div>
+	</div>
+	<div style="border-bottom: 1px solid white; margin: 20px;"></div>
+	<div class="container-fluid bg-dark mt-4">
+		<div class="row text-white text-center">
+			<div class="col-sm-3">
+				<h6>Đăng kí nhận thông tin khuyến mãi</h6>
+			</div>
+			<div class="col-sm-3">
+				Cập nhật thông tin khuyến mãi nhanh nhất <br>
+				Hưởng quyển lợi giảm giá riêng biệt
+			</div>
+			<div class="col-sm-4">
+				<form class="form-inline" style="padding-left: 50px">
+					<input type="text" class="form-control" id="email" placeholder="Email" name="email" size="26px">
+					<button class="btn mb-2" style="background-color: black; color: white">Gửi</button>
+				</form>
+			</div>
+			<div class="col-sm-2 logo-img">
+				<a href="https://www.facebook.com/groups/1954113158192735/?ref=share" target="_blank"><img src="http://chiliclub.vn/upload/khac/83839451_2475024026088609_2429006715459469312_n-7258.jpg" alt="CHILI GROUP" ></a>
+				<a href="https://www.instagram.com/chiliclub.vn/" target="_blank"><img src="https://brasol.vn/public/ckeditor/uploads/tin-tuc/brasol.vn-logo-instargram-logo-instagram-vector.png" alt="instagram.com"></a>
+				<a href="https://www.facebook.com/Chiliclub.vn/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="facebook.com"></a>
+			</div>
+		</div>
+	</div>
+		<div class="mt-4">
+			<div class="text-white" style="text-align: center;">2020 Copyright © <span>Banawa Shop </span> Web Design by <a href="" style="color: white;">NPKMY.19IT2</a></div>
+		</div>
+	</footer>
+
+	<div class="livechat">
+		<div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420"></div>
+
+		<script src="https://sp.zalo.me/plugins/sdk.js"></script>
+	</div>
+
+	<!--back-to-top-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

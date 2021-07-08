@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Roboto', 'Arial',sans-serif;
+	background: #e3f1ec !important;
+}
+/**********************nav-bar************************/
+
+#nav-bar{
+	margin-top: -40px;
+	background-color : black !important;
+	box-shadow: 2px 2px 5px gray !important;
+	position: sticky;
+	top: -40px;
+	z-index: 10;
+}
+.logo{
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white !important;
+}
+.logo-2{
+	color: orange !important;
+	font-size: 20px;
+}
+.navbar-brand{
+	margin-top: 20px;
+}
+.navbar-nav-1{
+	margin-top: 50px;
+}
+.nav-item-1-1{
+	margin-right: 50px;
+}
+
+.nav-item  a{
+	color: white;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.nav-item  a:hover{
+	text-decoration: none;
+}
+.nav-tabs{
+	padding-top: 10px;
+	width: 250px;
+	height: 590px;
+	background:  #0f0f0a;
+	margin-left: -20px;
+}
+.nav-tabs li{
+	margin-top: 10px;
+}
+.nav-tabs li:focus a{
+	color: black;
+}
+.nav-tabs h4{
+	margin-left: 70px;
+	color: orange;
+	font-weight: 600;
+}
+.nav-tabs  li a{
+	color: white;
+}
+#heading-one{
+	background: white;
+	margin-left: -100px;
+	width: 1100px;
+	margin-top: 5px;
+	height: 585px;
+}
+.admin-accounts{
+	width: 200px;
+	height: 250px;
+}
+.admin-wrapper{
+	width: 100%;
+	height: 100%;
+	background: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px gray !important;
+}
+.img-admin{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.user-1{
+	font-size: 35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 4px solid orange;
+	padding-top: 10px;
+}
+.note-admin{
+	padding-top: 10px;
+}
+.note-admin-1{
+	font-weight: 600;
+}
+.note-admin-2{
+	color: orange;
+}
+.Delete-admin{
+	background: orange ;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.Delete-admin:focus{
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important
+}
+.Page{
+	margin-top: 30px;
+	margin-left: 42%;
+}
+.pagination li a{
+	color: black;
+}
+.pagination li a:hover{
+	background: orange;
+	color: black;
+}
+
+
+
+
+
+
+
+#heading-two{
+	background: white;
+	margin-left: -100px;
+	width: 1100px;
+	margin-top: 5px;
+	height: 585px;
+}
+.user-accounts{
+	width: 200px;
+	height: 250px;
+}
+.user-wrapper{
+	width: 100%;
+	height: 100%;
+	background: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px gray !important;
+}
+.img-user{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.user-2{
+	font-size: 35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 4px solid #4fc3f7;
+	padding-top: 10px;
+}
+.note-user{
+	padding-top: 10px;
+}
+.note-user-1{
+	font-weight: 600;
+}
+.note-user-2{
+	color: #4fc3f7;
+}
+.Delete-user{
+	background: #4fc3f7 ;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.Delete-user:focus{
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important
+}
+.suggest-4 i{
+	color: #fccb00;
+}
+.Page2{
+	margin-top: 30px;
+	margin-left: 42%;
+}
+.pagination li a{
+	color: black;
+}
+.pagination li a:hover{
+	background: orange;
+	color: black;
+}
+.button1{
+	outline: none;
+	border: none;
+	background: none;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 19px;
+}
+.button1:focus{
+	box-shadow: none;
+	outline: none;
+	border: none;
+
+}
+.button1:hover{
+	font-size: 28px;
+}
+
+#heading-three{
+	background: white;
+	margin-left: -100px;
+	width: 1100px;
+	margin-top: 5px;
+	height: 585px;
+}
+.table0{
+	width: 15%;
+}
+.table1{
+	width: 50%;
+}
+.table2{
+	width: 10%;
+
+}
+.table3{
+	width: 10%;
+}
+.table4{
+	width: 20%;
+}
+.table{
+	border: 1px solid #cccccc;
+}
+.thead{
+	background: gray;
+}
+.note-2{
+	font-weight: 600;
+}
+.note-2{
+	margin-top: 20px;
+}
+.vat{
+	margin-top: 20px;
+}
+.total{
+	margin-top: 20px;
+}
+
+
+
+#heading-four{
+	background: white;
+	margin-left: -100px;
+	width: 1100px;
+	margin-top: 5px;
+	height: 585px;
+}
+.product-1 img{
+	width: 60px;
+	height: 70px;
+}
+.note-2-1{
+	font-weight: 600;
+}
+.Page3{
+	margin-top: -10px;
+	margin-left: 42%;
+}
+.note-2-1{
+	margin-top: 20px;
+}
+.Thongtin{
+	margin-top: 20px;
+}
+.nhapvao{
+	margin-top: 20px;
+}
+.daban{
+	margin-top: 20px;
+}
+.tonkho{
+	margin-top: 20px;
+}

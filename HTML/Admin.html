@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banawa Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="font/fontawesome-pro-5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="../CSS/Admin.css" rel="stylesheet">
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!---------------------Nav-bar------------------------>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-1">
+            <a class="navbar-brand" href="homepage.html"><span class="logo">Banawa <span class="logo-2">Admin</span></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars bars-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar-nav-1 ml-auto ">
+                    <li class="nav-item  ">
+                        <a href=""><i class="fa fa-user"></i> <span class="account">NguyenPhuongKieuMy</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="DangNhap.html"> <i class="fa fa-sign-out-alt"></i> <span class="account">Đăng xuất</span></a>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!------------------------------Admin-------------------------->
+    <section id="admin-page">
+        <div class="container-fluid admin-page">
+            <div class="row">
+                <div class="col-md-3 tabslide">
+                    <div class="slide1">
+                        <ul class="nav nav-tabs flex-column">
+                            <h4>Quản lý</h4>
+                            <li><a href="#heading-one" class="nav-link  active" data-toggle="tab">Tài khoản quản trị</a></li>
+                            <li><a href="#heading-two" class="nav-link " data-toggle="tab">Tài khoản khách hàng</a></li>
+                            <li><a href="#heading-three" class="nav-link " data-toggle="tab">Đơn hàng</a></li>
+                            <li><a href="#heading-four" class="nav-link " data-toggle="tab">Kiểm tra nhập tồn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content flex-center">
+                        <div class="tab-pane fade show active" id="heading-one" class="slide1-1">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> NguyenXuanNga<br>
+                                                    <span class="note-admin-1">ID:</span> 4343343434<br>
+                                                    <span class="note-admin-2">Bộ phận:Quản lý truyền thông.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> NguyenNam<br>
+                                                    <span class="note-admin-1">ID:</span> 8282923647<br>
+                                                    <span class="note-admin-2">Bộ phận:Quản lý sản phẩm.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> Hoàng Mai<br>
+                                                    <span class="note-admin-1">ID:</span> 9327368497<br>
+                                                    <span class="note-admin-2">Bộ phận:Kế toán.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> HoangTruong<br>
+                                                    <span class="note-admin-1">ID:</span> 092873874<br>
+                                                    <span class="note-admin-2">Bộ phận:Marketing.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> HungNam<br>
+                                                    <span class="note-admin-1">ID:</span> 9273645372<br>
+                                                    <span class="note-admin-2">Bộ phận:Kiểm định sản phẩm.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span>NguyenHungNam<br>
+                                                    <span class="note-admin-1">ID:</span> 9382736482<br>
+                                                    <span class="note-admin-2">Bộ phận:Quản trị website.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span> LeNhatThao<br>
+                                                    <span class="note-admin-1">ID:</span> 99077263972<br>
+                                                    <span class="note-admin-2">Bộ phận:Tổ chức sự kiện.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 admin-accounts">
+                                        <div class="admin-wrapper">
+                                            <div class="img-admin">
+                                                <i class="fa fa-user user-1"></i>
+                                            </div>
+                                            <div class="note-admin">
+                                                <span>
+                                                    <span class="note-admin-1">Tài khoản:</span>VoManhCuong<br>
+                                                    <span class="note-admin-1">ID:</span>9982736642<br>
+                                                    <span class="note-admin-2">Bộ phận:Kiểm toán.</span>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-admin-1" class="Delete-admin">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="Page navigation example" class="Page">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!------------------------USER--------------------->
+                        <div class="tab-pane fade show" id="heading-two" class="slide1-2">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span> HungNam<br>
+                                                    <span class="note-user-1">ID:</span> 8977663552<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        (2)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span> VanMai<br>
+                                                    <span class="note-user-1">ID:</span> 6677366823<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        (26)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span> BeBu<br>
+                                                    <span class="note-user-1">ID:</span> 8726352982<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-half-alt"></i>
+                                                        (18)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span>NamTran<br>
+                                                    <span class="note-user-1">ID:</span> 1826352763<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        (9)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span>CongNhu<br>
+                                                    <span class="note-user-1">ID:</span> 8636548892<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        (8)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span> HaNhuy<br>
+                                                    <span class="note-user-1">ID:</span> 9826354921<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-half-alt"></i>
+                                                        (9)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span>BichNga<br>
+                                                    <span class="note-user-1">ID:</span> 228736492<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-half-alt"></i>
+                                                        (12)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 user-accounts">
+                                        <div class="user-wrapper">
+                                            <div class="img-user">
+                                                <i class="fa fa-user user-2"></i>
+                                            </div>
+                                            <div class="note-user">
+                                                <span>
+                                                    <span class="note-user-1">Tài khoản:</span>HoangTranNam<br>
+                                                    <span class="note-user-1">ID:</span> 228776492<br>
+                                                    <div class="suggest-4">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        (20)
+                                                    </div>
+                                                </span>
+                                            </div>
+                                            <button type="button" id="delete-user-1" class="Delete-user">
+                                                Xóa tài khoản
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav aria-label="Page navigation example" class="Page2">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="heading-three" class="slide1-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table">
+                                            <thead class="thead">
+                                                <tr>
+                                                    <th scope="col" class="table0">Mã Hóa Đơn</th>
+                                                    <th scope="col" class="table1">Sản phẩm</th>
+                                                    <th scope="col" class="table2">VAT</th>
+                                                    <th scope="col" class="table3">Tổng giá</th>
+                                                    <th scope="col" class="table4">Xuất hóa đơn</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2">6653274</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="product">
+                                                            Buttefly Wallet 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="vat">0%</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="total">
+                                                            223.750 đ
+                                                        </div>
+                                                    </td>
+                                                    <td><button type="button" class="button1" onclick="btn()">
+                                                            <i class="fa fa-print"></i>
+                                                        </button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2">9238283</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="product">
+                                                            Tiedye Crossbody viền phản quang 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="vat">0%</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="total">
+                                                            241.990 đ
+                                                        </div>
+                                                    </td>
+                                                    <td><button type="button" class="button1" onclick="btn()">
+                                                            <i class="fa fa-print"></i>
+                                                        </button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2">8732622</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="product">
+                                                            Butterfly Drop
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="vat">0%</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="total">
+                                                            228.000 đ
+                                                        </div>
+                                                    </td>
+                                                    
+                                                    <td><button type="button" class="button1" onclick="btn()">
+                                                            <i class="fa fa-print"></i>
+                                                        </button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="heading-four" class="slide1-4">
+                           <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table">
+                                            <thead class="thead">
+                                                <tr>
+                                                    <th scope="col" class="table-0">Mã Sản phẩm</th>
+                                                    <th scope="col" class="table-1">Sản phẩm</th>
+                                                     <th scope="col" class="table-2">Thông tin</th>
+                                                    <th scope="col" class="table-3">Nhập vào</th>
+                                                    <th scope="col" class="table-4">Đã bán</th>
+                                                    <th scope="col" class="table-5">Tồn kho</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2-1">6653274</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="product-1">
+                                                        	<img src="http://banawa.com.vn/thumb/265x300/1/upload/product/8433485525551791980589622807520435204259840o-4745.jpg">
+
+                                                        </div>
+                                                    </td>
+                                                    <td >
+                                                    	<div class="Thongtin">
+                                                    		Tie Dye Skirt
+                                                    	</div>
+                                                    	
+                                                    </td>
+                                                    <td>
+                                                        <div class="nhapvao">300</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="daban">
+                                                            179
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    	<div class="tonkho">
+                                                           121
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2-1">6653274</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="product-1">
+                                                        	<img src="http://banawa.com.vn/thumb/265x300/1/upload/product/unnamed-7335.jpg">
+
+                                                        </div>
+                                                    </td>
+                                                    <td >
+                                                    	<div class="Thongtin">
+                                                    		Sweetheart Skirt
+                                                    	</div>
+                                                    	
+                                                    </td>
+                                                    <td>
+                                                        <div class="nhapvao">300</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="daban">
+                                                            179
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    	<div class="tonkho">
+                                                           121
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <div class="note-2-1">6623274</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="product-1">
+                                                        	<img src="http://banawa.com.vn/thumb/265x300/1/upload/product/867387042563981090512106774991238989348864o-9690.jpg">
+
+                                                        </div>
+                                                    </td>
+                                                    <td >
+                                                    	<div class="Thongtin">
+                                                    		Puppet Tee - Black
+                                                    	</div>
+                                                    	
+                                                    </td>
+                                                    <td>
+                                                        <div class="nhapvao">200</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="daban">
+                                                            129
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    	<div class="tonkho">
+                                                           71
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td>
+                                                        <div class="note-2-1">6653274</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="product-1">
+                                                        	<img src="http://banawa.com.vn/thumb/265x300/1/upload/product/10449253726783771657391644132302791739726803o-9005.jpg">
+
+                                                        </div>
+                                                    </td>
+                                                    <td >
+                                                    	<div class="Thongtin">
+                                                    		
+                                                            The Butterfly Drop Shoulder
+                                                    	</div>
+                                                    	
+                                                    </td>
+                                                    <td>
+                                                        <div class="nhapvao">700</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="daban">
+                                                            559
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    	<div class="tonkho">
+                                                           141
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="note-2-1">6654374</div>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="product-1">
+                                                        	<img src="http://banawa.com.vn/thumb/265x300/1/upload/product/7944678626564043412697802555977029744852992o-2691.jpg">
+
+                                                        </div>
+                                                    </td>
+                                                    <td >
+                                                    	<div class="Thongtin">
+                                                    		The Butterfly Tie Dye Tee - White
+                                                    	</div>
+                                                    	
+                                                    </td>
+                                                    <td>
+                                                        <div class="nhapvao">200</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="daban">
+                                                            88
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                    	<div class="tonkho">
+                                                           112
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                     <nav aria-label="Page navigation example" class="Page3">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
